@@ -40,18 +40,7 @@ const Logo = () => {
 
   return (
     <div className="logo-container" ref={bgRef}>
-      <img
-        className="solid-logo"
-        ref={solidLogoRef}
-        src={LogoS}
-        alt="JavaScript,  Developer"
-      />  
-      <img
-        className="solid-logo"
-        ref={solidLogoRef}
-        src={OutlinedLogo}
-        alt="JavaScript,  Developer"
-      />  
+
     </div>
   )
 }
