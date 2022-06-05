@@ -2,6 +2,7 @@ import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap-trial'
 import './index.scss'
+import LogoS from '../../../assets/images/logo-s.png'
 
 
 const Logo = () => {
@@ -11,15 +12,14 @@ const Logo = () => {
 
   useEffect(() => {
     gsap.registerPlugin(DrawSVGPlugin)
-    gsap
-      .timeline()
+    gsap.timeline()
       .to(bgRef.current, {
         duration: 1,
         opacity: 1,
       })
       .from(outlineLogoRef.current, {
-        drawSVG: 0,
-        duration: 20,
+        drawSVG: 0.5,
+        duration: 1,
       })
 
     gsap.fromTo(
@@ -37,24 +37,9 @@ const Logo = () => {
 
   return (
     <div className="logo-container" ref={bgRef}>
-      <svg width="310" height="426" viewBox="0 0 310 426" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_d_14_14)">
-          <path d="M177.725 27.7631L59.6775 12.1931L7.25908 409.616L34.0273 413.147L50.2319 415.284L102.498 68.4959L171.158 77.5519C204.083 81.8946 227.437 112.345 223.094 145.27C218.751 178.195 188.301 201.548 155.376 197.206L95.951 189.368L99.0736 240.026L148.862 246.593C209.091 254.537 264.538 212.012 272.481 151.784C280.478 91.1538 237.954 35.707 177.725 27.7631Z" stroke="#FFF1A3" stroke-width="4.5" />
-        </g>
-        <defs>
-          <filter id="filter0_d_14_14" x="-1.71686" y="0.652092" width="315.434" height="425.152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-            <feOffset dy="4" />
-            <feGaussianBlur stdDeviation="2" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_14_14" />
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_14_14" result="shape" />
-          </filter>
-        </defs>
+      <svg width="236" height="408" viewBox="0 0 236 408" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path ref={outlineLogoRef} fill-rule="evenodd" clip-rule="evenodd" d="M0.752533 1.70351L122.07 0.867271C184.066 0.439927 234.825 50.514 235.255 112.905C235.682 174.896 185.613 225.66 123.622 226.087L71.5499 226.446L60.5778 172.205L123.248 171.773C155.214 171.553 181.161 145.246 180.941 113.279C180.721 81.3125 154.413 55.3656 122.447 55.586L55.4023 56.0481L51.3494 406.729L3.54666 407.059L0.752533 1.70351ZM5.28344 6.17239L8.01554 402.528L46.9007 402.26L50.9536 51.5787L122.416 51.0861C156.868 50.8486 185.203 78.7963 185.441 113.248C185.678 147.7 157.731 176.036 123.279 176.273L66.0716 176.667L75.2256 221.92L123.591 221.587C183.097 221.177 231.165 172.442 230.755 112.936C230.342 53.0195 181.601 4.95702 122.101 5.36716L5.28344 6.17239Z" fill="#FFF1A3"/>
       </svg>
-
 
     </div>
   )
