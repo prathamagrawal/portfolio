@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faKaggle, faInstagram, } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope, faBook, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
-
+import LogoS  from '../../assets/images/logo_sub.png'
 
 const Sidebar = () => {
     return (
         <div className="nav-bar">
             <Link className="logo" to="/">
-                <img src="Pratham.png" alt="Logo" />
+                
+                <img src={LogoS} alt="Logo" />
             </Link>
             <nav>
                 <NavLink exact="true" activeclassname="active" to="/">
