@@ -2,14 +2,15 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
+import home from "../../assets/images/home.jpg"
+
 import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['  ','P','r', 'a', 't', 'h', 'a', 'm']
-  const jobArray = [ 'D','a','t','a',' ','S','c','i','e','n','t','i','s','t']
+  const nameArray = ['  ', 'P', 'r', 'a', 't', 'h', 'a', 'm','  ','A','g','r','a','w','a','l']
+  const jobArray = ['F','u','t','u','r','e','  ','D', 'a', 't', 'a', ' ', 'S', 'c', 'i', 'e', 'n', 't', 'i', 's', 't']
 
   useEffect(() => {
     return setTimeout(() => {
@@ -36,7 +37,7 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={22}
+              idx={1}
             />
           </h1>
           <h2>Data Scientist | Machine Learning Engineer | Student </h2>
@@ -44,9 +45,10 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
       </div>
-
+      <div className="home_img_mask">
+      <img src={home} alt="home-img" className="home_img"/>
+      </div>
       <Loader type="pacman" />
     </>
   )
