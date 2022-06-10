@@ -1,17 +1,53 @@
-.contact-page{
+.contact-page {
   width: 100%;
-  align-items: center;
-  text-align: center;
+  margin-left:10%;
+  margin-top:10%;
 
-  h1{
-    color:white;
-    font-size: 50px;
-    font-family: "Elianto";
+  .text-box{
+    margin-top:5%;
   }
-  
+
+  h1 {
+    color: #fff;
+    font-size: 66px;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+
+    &:before {
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -40px;
+      left: -20px;
+      opacity: 0.6;
+    }
+
+    &:after {
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+    }
+  }
+
   p{
-    color:white;
-    font-size: 20px;
-    font-family: "Helvetica Neue";
+    font-size: 30px;   
+    line-height: 33px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 100;
+
   }
+
+}
+
+.contact-links{
+  width: 100%;
 }
