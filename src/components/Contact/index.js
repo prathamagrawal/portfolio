@@ -31,7 +31,14 @@ const Contact = () => {
             Sed blandit ac lorem vitae blandit. A
           </p>
         </div>
-        
+        <div className="contact-links">
+          <h2>Phone </h2>
+          
+          <h2>Mail </h2>
+          <h2>Linkedin </h2>
+          <h2>Github </h2>
+          <h2>Instagram </h2>
+        </div>
       </div>
       <Loader type="pacman" />
     </>
