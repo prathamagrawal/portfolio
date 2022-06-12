@@ -1,7 +1,7 @@
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faKaggle, faInstagram, } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faEnvelope, faBook, faMailBulk } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faBook } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 import LogoS  from '../../assets/images/outlinedP.png'
 import LogoP from '../../assets/images/Pratham.png'
@@ -56,7 +56,7 @@ const Sidebar = () => {
                 </li>
                 <li>
                     <a href="https://mailto:prathamagrawal1205@gmail.com" target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon icon={faMailBulk} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                     </a>
                 </li>
             </ul>

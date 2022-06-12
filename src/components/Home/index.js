@@ -46,9 +46,8 @@ const Home = () => {
               CONTACT ME
             </Link>
           </div>
-            <img src={home} alt="home-img" className="home_img" />
         </div>
-
+        <img src={home} alt="home-img" className="home_img" />
         <Loader type="pacman" />
       </div>
     </>
