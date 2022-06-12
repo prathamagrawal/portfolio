@@ -9,8 +9,8 @@ import './index.scss'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['  ', 'P', 'r', 'a', 't', 'h', 'a', 'm','  ','A','g','r','a','w','a','l']
-  const jobArray = ['F','u','t','u','r','e','  ','D', 'a', 't', 'a', ' ', 'S', 'c', 'i', 'e', 'n', 't', 'i', 's', 't']
+  const nameArray = ['  ', 'P', 'r', 'a', 't', 'h', 'a', 'm', '  ', 'A', 'g', 'r', 'a', 'w', 'a', 'l']
+  const jobArray = ['F', 'u', 't', 'u', 'r', 'e', '  ', 'D', 'a', 't', 'a', ' ', 'S', 'c', 'i', 'e', 'n', 't', 'i', 's', 't']
 
   useEffect(() => {
     return setTimeout(() => {
@@ -20,36 +20,37 @@ const Home = () => {
 
   return (
     <>
-      <div className="container home-page">
-        <div className="text-zone">
-          <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
-            />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={1}
-            />
-          </h1>
-          <h2>Data Scientist | Machine Learning Engineer | Student </h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+      <div>
+        <div className="container home-page">
+          <div className="text-zone">
+            <h1>
+              <span className={letterClass}>H</span>
+              <span className={`${letterClass} _12`}>i,</span>
+              <br />
+              <span className={`${letterClass} _13`}>I</span>
+              <span className={`${letterClass} _14`}>'m</span>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={nameArray}
+                idx={15}
+              />
+              <br />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray}
+                idx={1}
+              />
+            </h1>
+            <h2>Data Scientist | Chaiperson at IET-VIT |<br/> Machine Learning Engineer | Student </h2>
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+          </div>
+            <img src={home} alt="home-img" className="home_img" />
         </div>
+
+        <Loader type="pacman" />
       </div>
-      <div className="home_img_mask">
-      <img src={home} alt="home-img" className="home_img"/>
-      </div>
-      <Loader type="pacman" />
     </>
   )
 }

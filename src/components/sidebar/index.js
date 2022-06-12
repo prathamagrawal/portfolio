@@ -21,9 +21,9 @@ const Sidebar = () => {
                 <NavLink activeclassname="active" className="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
-                <NavLink activeclassname="active" className="resume-link" to="www.google.com">
+                <NavLink activeclassname="active" className="resume-link" to="resume">
                     <FontAwesomeIcon icon={faBook} color="#4d4d4e" />
-                    <a href="www.google.com" target="_blank" rel="noreferrer"> </a>
+                    
                 </NavLink>
                 <NavLink
                     activeclassname="active"
