@@ -1,15 +1,21 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import {Button} from '@mui/material'
+import { Button } from '@mui/material'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import { Backdrop, CircularProgress } from '@mui/material';
 
 
 const About = () => {
-
+  const [open, setOpen] = useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleToggle = () => {
+    setOpen(!open);
+  };
   const [letterClass, setLetterClass] = useState('text-animate')
-
   useEffect(() => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
@@ -29,19 +35,19 @@ const About = () => {
             I'm a Third Year student Computer Science student.<br />
             I'm very ambitious soon to be an Engineer specilized in Data Science<br />
             and Machine Learning in . I would love to work on more any projects.
-          </p>         
-          <p align="LEFT">
-            I also serve as the Chaiperson for IET-VIT, a student run chapter in VIT, Vellore.<br/>
-            I am highly interested in research opportunities. 
           </p>
-           <p align="LEFT">
+          <p align="LEFT">
+            I also serve as the Chaiperson for IET-VIT, a student run chapter in VIT, Vellore.<br />
+            I am highly interested in research opportunities.
+          </p>
+          <p align="LEFT">
             I also like to serve back to the community through my special love for dogs.<br />
             I accomplish this task through serving as Human Resources Director for Littelove, Indore.
           </p>
           <p align="LEFT">
             I'm a quitely confident, artistic, optimistic, and perpetually working on<br />
-            problem at a time. I love to listen to old music when I am working. <br/> 
-            I am always up for drawing Marvel heros sketches and listening to old music. 
+            problem at a time. I love to listen to old music when I am working. <br />
+            I am always up for drawing Marvel heros sketches and listening to old music.
           </p>
           <p align="LEFT">
             You can learn more about me in the resume.
@@ -50,14 +56,22 @@ const About = () => {
             RESUME
           </Link>
         </div>
+
         <div className="container card">
           <p>It's a trap! Don't Click.. </p>
-        <Button>
-          CLICK ME 
+          <Button onClick={handleToggle}>
+            CLICK ME
           </Button>
-        </div>
+          <Backdrop open={open} onClick={handleClose}>
+              <p className="about-cards">
+                Pratham Agrawal 
+              </p>
+          </Backdrop>
 
+        </div>
       </div>
+
+
       <Loader type="pacman" />
     </>
   )
