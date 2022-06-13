@@ -4,10 +4,18 @@ import { Button } from '@mui/material'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import { Backdrop, CircularProgress } from '@mui/material';
-
+import { Backdrop } from '@mui/material';
+import Card from './card'
 
 const About = () => {
+  const backdropStyle = {
+    color: "black",
+    backgroundColor: "rgb(240,230,0,0.4)",
+    position: "absolute",
+    right: 30,
+    left:150,
+    zIndex: 1,
+  }
   const [open, setOpen] = useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -25,6 +33,9 @@ const About = () => {
   return (
     <>
       <div className="container about-page" >
+      <Backdrop open={open} onClick={handleClose} sx={backdropStyle}>
+              <Card />
+          </Backdrop>
         <div className="about-text">
           <AnimatedLetters
             letterClass={letterClass}
@@ -62,16 +73,8 @@ const About = () => {
           <Button onClick={handleToggle}>
             CLICK ME
           </Button>
-          <Backdrop open={open} onClick={handleClose}>
-              <p className="about-cards">
-                Pratham Agrawal 
-              </p>
-          </Backdrop>
-
         </div>
       </div>
-
-
       <Loader type="pacman" />
     </>
   )
