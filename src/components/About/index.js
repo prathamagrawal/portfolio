@@ -9,12 +9,11 @@ import Card from './card'
 
 const About = () => {
   const backdropStyle = {
-    color: "black",
-    backgroundColor: "rgb(240,230,0,0.4)",
+    backgroundColor: "#BFACC8",
     position: "absolute",
     right: 30,
     left:150,
-    zIndex: 1,
+    zIndex: 5,
   }
   const [open, setOpen] = useState(false);
   const handleClose = () => {
@@ -33,8 +32,14 @@ const About = () => {
   return (
     <>
       <div className="container about-page" >
+      <div className="container card">
+          <p>It's a trap! Don't Click.. </p>
+          <Button onClick={handleToggle}>
+            CLICK ME
+          </Button>
+        </div>
       <Backdrop open={open} onClick={handleClose} sx={backdropStyle}>
-              <Card />
+            <Card />
           </Backdrop>
         <div className="about-text">
           <AnimatedLetters
@@ -68,12 +73,7 @@ const About = () => {
           </Link>
         </div>
 
-        <div className="container card">
-          <p>It's a trap! Don't Click.. </p>
-          <Button onClick={handleToggle}>
-            CLICK ME
-          </Button>
-        </div>
+
       </div>
       <Loader type="pacman" />
     </>
