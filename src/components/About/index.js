@@ -72,8 +72,6 @@ const About = () => {
             RESUME
           </Link>
         </div>
-
-
       </div>
       <Loader type="pacman" />
     </>

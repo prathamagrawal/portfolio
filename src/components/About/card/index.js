@@ -1,5 +1,6 @@
 import AnimatedLetters from '../../AnimatedLetters'
 import './index.scss'
+import { Link, NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { Grid } from '@mui/material'
 import { Paper } from '@mui/material'
@@ -63,66 +64,65 @@ const Card = () => {
                     </Grid>
                 </Container>
                 <Container >
-                    <Grid container className="tech" rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={gridStyles}>
-                        <Grid spacing-12 item xs={3} sm={3} md={3}>
+                    <Grid container className="tech" rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={gridStyles}>
+                        <Grid spacing-12 item xs={6} sm={6} md={3}>
                             <paper sx={{ border: "5px solid #783f8e", backgroundColor: "#bfacc8" }}>
                                 <div>
                                     <FontAwesomeIcon icon={faPython} size="7x" color="black"/>
                                 </div>
                             </paper>
                         </Grid>
-                        <Grid spacing-12 item xs={3} sm={3} md={3}>
+                        <Grid spacing-12 item sixs={6} sm={6} md={3}>
                             <paper sx={{ border: "5px solid #783f8e", backgroundColor: "#bfacc8" }}>
                                 <div>
                                     <FontAwesomeIcon icon={faRProject} size="7x" color="black"/>
+
                                 </div>
                             </paper>
                         </Grid>
-                        <Grid spacing-12 item xs={3} sm={3} md={3}>
+                        <Grid spacing-12 item sixs={6} sm={6} md={3}>
                             <paper sx={{ border: "5px solid #783f8e", backgroundColor: "#bfacc8" }}>
                                 <div>
                                     <FontAwesomeIcon icon={faHtml5} size="7x" color="black"/>
                                 </div>
                             </paper>
                         </Grid>
-                        <Grid spacing-12 item xs={3} sm={3} md={3}>
+                        <Grid spacing-12 item sixs={6} sm={6} md={3}>
                             <paper sx={{ border: "5px solid #783f8e", backgroundColor: "#bfacc8" }}>
                                 <div>
                                     <FontAwesomeIcon icon={faCss3} size="7x" color="black"/>
                                 </div>
                             </paper>
                         </Grid>
-                        <Grid spacing-12 item xs={3} sm={3} md={3}>
+                        <Grid spacing-12 item sixs={6} sm={6} md={3}>
                             <paper sx={{ border: "5px solid #783f8e", backgroundColor: "#bfacc8" }}>
                                 <div>
                                     <FontAwesomeIcon icon={faJs} size="7x" color="black"/>
                                 </div>
                             </paper>
                         </Grid>
-                        <Grid spacing-12 item xs={3} sm={3} md={3}>
+                        <Grid spacing-12 item sixs={6} sm={6} md={3}>
                             <paper sx={{ border: "5px solid #783f8e", backgroundColor: "#bfacc8" }}>
                                 <div>
                                     <FontAwesomeIcon icon={faNodeJs} size="7x" color="black"/>
                                 </div>
                             </paper>
                         </Grid>
-                        <Grid spacing-12 item xs={3} sm={3} md={3}>
+                        <Grid spacing-12 item sixs={6} sm={6} md={3}>
                             <paper sx={{ border: "5px solid #783f8e", backgroundColor: "#bfacc8" }}>
                                 <div>
                                     <FontAwesomeIcon icon={faReact} size="7x" color="black"/>
                                 </div>
                             </paper>
                         </Grid>
-                        <Grid spacing-12 item xs={3} sm={3} md={3}>
+                        <Grid spacing-12 item sixs={6} sm={6} md={3}>
                             <paper sx={{ border: "5px solid #783f8e", backgroundColor: "#bfacc8" }}>
                                 <div>
                                     <FontAwesomeIcon icon={faJava} size="7x" color="black"/>
                                 </div>
                             </paper>
                         </Grid>
-
-
-                        <Grid spacing-12 item xs={3} sm={3} md={3}>
+                        <Grid spacing-12 item sixs={6} sm={6} md={3}>
                             <paper sx={{ border: "5px solid #783f8e", backgroundColor: "#bfacc8" }}>
                                 <div>
                                  
@@ -131,6 +131,11 @@ const Card = () => {
                         </Grid>
                     </Grid>
                 </Container>
+                <div className="about_contact">
+                    <Link to="/resume" className="flat-button">
+                        RESUME
+                    </Link>
+                </div>
             </div>
         </>
     )

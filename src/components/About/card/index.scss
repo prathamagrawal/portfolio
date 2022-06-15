@@ -24,6 +24,27 @@
         align-items: center;
     }
 
+    .about_contact{
+        width: 100%;
+        position: relative;
+        align-items: center;
+        .flat-button{
+            margin-left:40%;
+            width: auto;
+            height: 80%;
+            border: 1px solid #783f8e;
+            font-size: 54px;
+            color: #783f8e;
+            border-radius: 20px;
+            font-family: 'Elianto';
+            animation: fadeInAnimation 1s 1.8s backwards;
+            white-space: nowrap;
+            &:hover {
+              background: #783f8e;
+              color: #bfacc8;
+            }
+        }
+    }
 }
 
 .card_de{
