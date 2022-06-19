@@ -1,27 +1,67 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import home from "../../assets/images/home_c.jpg"
-
-import './index.scss'
+import home from '../../assets/images/home_c.jpg'
+import layout from '../layout/index.module.scss'
+import styles from './index.module.scss'
+import Image from 'next/image'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['  ', 'P', 'r', 'a', 't', 'h', 'a', 'm', '  ', 'A', 'g', 'r', 'a', 'w', 'a', 'l']
-  const jobArray = ['F', 'u', 't', 'u', 'r', 'e', '  ', 'D', 'a', 't', 'a', ' ', 'S', 'c', 'i', 'e', 'n', 't', 'i', 's', 't']
+  const nameArray = [
+    '  ',
+    'P',
+    'r',
+    'a',
+    't',
+    'h',
+    'a',
+    'm',
+    '  ',
+    'A',
+    'g',
+    'r',
+    'a',
+    'w',
+    'a',
+    'l',
+  ]
+  const jobArray = [
+    'F',
+    'u',
+    't',
+    'u',
+    'r',
+    'e',
+    '  ',
+    'D',
+    'a',
+    't',
+    'a',
+    ' ',
+    'S',
+    'c',
+    'i',
+    'e',
+    'n',
+    't',
+    'i',
+    's',
+    't',
+  ]
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
   }, [])
 
   return (
     <>
-      <div>
-        <div className="container home-page">
-          <div className="text-zone">
+    <div>
+        <div className={`${styles["home-page"]}`}>
+          <div className={`${styles["text-zone"]}`}>
             <h1>
               <span className={letterClass}>H</span>
               <span className={`${letterClass} _12`}>i,</span>
@@ -40,15 +80,20 @@ const Home = () => {
                 idx={1}
               />
             </h1>
-            <h2>Future Data Scientist | Machine Learning Engineer |<br/> Chaiperson at IET-VIT |  Student </h2>
-            <Link to="/contact" className="flat-button">
-              CONTACT ME
+            <h2>
+              Future Data Scientist | Machine Learning Engineer |<br />{' '}
+              Chaiperson at IET-VIT | Student{' '}
+            </h2>
+            <Link href="/contact" >
+              <a className={`${styles["flat-button"]}`}>Contact</a> 
             </Link>
           </div>
+          <div className={`${styles["homeimage"]}`}>
+            <Image src={home} alt="home" width="800w" height="800px" />
+          </div>
+          <Loader type="pacman" />        
         </div>
-        <img src={home} alt="home-img" className="home_img" />
-        <Loader type="pacman" />
-      </div>
+        </div>
     </>
   )
 }
