@@ -21,7 +21,7 @@ const Sidebar = () => {
                 <NavLink activeclassname="active" className="about-link" to="/about">
                     About
                 </NavLink>
-                <NavLink activeclassname="active" className="resume-link" to="resume">
+                <NavLink activeclassname="active" className="resume-link" to="Resume.pdf">
                     Resume
                 </NavLink>
                 <NavLink activeclassname="active" className="contact-link" to="/contact">

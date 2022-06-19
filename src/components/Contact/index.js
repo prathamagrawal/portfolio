@@ -30,13 +30,13 @@ const Contact = () => {
     <>
       <div className="container contact-page">
         <div className="text-box">
-          
+          <h1>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['G', 'e', 't', '  ', 'i', 'n', '  ', 't', 'o', 'u', 'c', 'h']}
               idx={15}
             />
-          
+          </h1>          
         </div>
         <p>
           <br />Let's work on some exciting Machine Learning or <br />Artificial Intelligence Projects or something exciting

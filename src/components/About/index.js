@@ -42,11 +42,13 @@ const About = () => {
             <Card />
           </Backdrop>
         <div className="about-text">
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-            idx={15}
-          />
+          <p className="about-heading">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e  ']}
+              idx={15}
+            />
+          </p>
           <p>
             I'm a Third Year student Computer Science student.<br />
             I'm very ambitious soon to be an Engineer specilized in Data Science<br />

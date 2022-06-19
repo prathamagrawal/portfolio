@@ -40,6 +40,7 @@
             font-size: 22px;
             font-family:Helvetica Neue;
             color: #4d4d4e;
+            font-weight: bold;
             display: block;
             line-height: 51px;
             height: 51px;
@@ -50,9 +51,8 @@
                 transition: all 0.3s ease-out;
             }
         }
-
         a.active {
-            color: #ffd700;
+            color: #bfacc8  ;
         }
     }
 
@@ -75,7 +75,7 @@
                 color: #4d4d4e;
 
                 &:hover {
-                    color: #ffd700;
+                    color: #bfacc8;
                 }
             
                 img{
