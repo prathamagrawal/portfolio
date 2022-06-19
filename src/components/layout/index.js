@@ -4,6 +4,7 @@ const Layout = (props) => {
   return (
     <div className="App">
       <Sidebar />
+      
       <div className="page">
         <span className="tags top-tags"></span>
         {props.child}

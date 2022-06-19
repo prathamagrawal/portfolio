@@ -25,7 +25,6 @@ const Sidebar = () => {
       </div>
       
 
-
       <nav className={`${styleslayout["navba"]}`}>
         <Link href="/">
           <a className={`${styleslayout["socials"]}`}>Home</a>

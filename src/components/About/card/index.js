@@ -1,5 +1,5 @@
 import AnimatedLetters from '../../AnimatedLetters'
-
+import styleslayout from './index.module.scss'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { Grid } from '@mui/material'
@@ -30,7 +30,7 @@ const Card = () => {
 
   return (
     <>
-      <div className="card_h">
+      <div className={`${styleslayout["card_h"]}`}>
         <p>
           <AnimatedLetters
             letterClass={letterClass}
@@ -49,8 +49,8 @@ const Card = () => {
               <Paper
                 sx={{ border: '5px solid #783f8e', backgroundColor: '#bfacc8' }}
               >
-                <div className="card_de">
-                  <div className="card_heading">
+                <div className={`${styleslayout['card_de']}`}>
+                  <div className={`${styleslayout['card_heading']}`}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
@@ -71,8 +71,8 @@ const Card = () => {
               <Paper
                 sx={{ border: '5px solid #783f8e', backgroundColor: '#bfacc8' }}
               >
-                <div className="card_de">
-                  <div className="card_heading">
+                <div className={`${styleslayout['card_de']}`}>
+                  <div className={`${styleslayout['card_heading']}`}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -95,7 +95,7 @@ const Card = () => {
         <Container>
           <Grid
             container
-            className="tech"
+            className={`${styleslayout["tech"]}`}
             rowSpacing={4}
             columnSpacing={{ xs: 1, sm: 2, md: 3 }}
             sx={gridStyles}
@@ -181,9 +181,9 @@ const Card = () => {
             </Grid>
           </Grid>
         </Container>
-        <div className="about_contact">
-          <Link href="/resume" className="flat-button">
-            RESUME
+        <div className={`${styleslayout['about_contact']}`}>
+          <Link href="/resume">
+            <a className={`${styleslayout['flat-button']}`} >Resume</a>
           </Link>
         </div>
       </div>

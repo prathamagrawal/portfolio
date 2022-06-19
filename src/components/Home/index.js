@@ -59,7 +59,7 @@ const Home = () => {
 
   return (
     <>
-    <div>
+    <div className={`${styles["home"]}`}>
         <div className={`${styles["home-page"]}`}>
           <div className={`${styles["text-zone"]}`}>
             <h1>
@@ -89,7 +89,7 @@ const Home = () => {
             </Link>
           </div>
           <div className={`${styles["homeimage"]}`}>
-            <Image src={home} alt="home" width="800w" height="800px" />
+            <Image src={home} alt="home" width="800w" height="800w" />
           </div>
           <Loader type="pacman" />        
         </div>

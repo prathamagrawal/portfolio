@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Button } from '@mui/material'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-
+import styleslayout from './index.module.scss'
 import { Backdrop } from '@mui/material'
 import Card from './card'
 
@@ -31,16 +31,17 @@ const About = () => {
 
   return (
     <>
-      <div className="container about-page">
-        <div className="container card">
-          <p>It's a trap! Don't Click.. </p>
-          <Button onClick={handleToggle}>CLICK ME</Button>
-        </div>
-        <Backdrop open={open} onClick={handleClose} sx={backdropStyle}>
-          <Card />
-        </Backdrop>
-        <div className="about-text">
-          <p className="about-heading">
+      <div>
+        <div className={`${styleslayout["about-text"]}`}>
+
+        <div className={`${styleslayout["card"]}`}>
+            <p>It's a trap! Don't Click.. </p>
+            <Button onClick={handleToggle}>CLICK ME</Button>
+          </div>
+          <Backdrop open={open} onClick={handleClose} sx={backdropStyle}>
+            <Card />
+          </Backdrop>
+          <p className={`${styleslayout["about-heading"]}`}>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e  ']}
@@ -74,9 +75,10 @@ const About = () => {
             to old music.
           </p>
           <p align="LEFT">You can learn more about me in the resume.</p>
-          <Link href="/resume" className="flat-button">
-            RESUME
+          <Link href="Resume.pdf">
+            <a className={`${styleslayout["flat-button"]}`}>RESUME</a>
           </Link>
+
         </div>
       </div>
       <Loader type="pacman" />
