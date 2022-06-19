@@ -12,6 +12,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { Grid } from '@mui/material'
 import { Paper } from '@mui/material'
 import { Container } from '@mui/material'
+import styleslayout from './index.module.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -29,8 +30,8 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container contact-page">
-        <div className="text-box">
+      <div className={`${styleslayout["contact-page"]}`}>
+       <div className={`${styleslayout["text-box"]}`}>
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -51,14 +52,14 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-        </div>
+        
         <p>
           <br />
           Let's work on some exciting Machine Learning or <br />
           Artificial Intelligence Projects or something exciting
         </p>
-
-        <div className="container contact-grid">
+        </div>
+        <div className={`${styleslayout["contact-grid"]}`}>
           <Container>
             <Grid
               container

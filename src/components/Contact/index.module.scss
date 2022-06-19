@@ -3,8 +3,10 @@
   margin-left:10%;
   margin-top:10%;
 
+
   .text-box{
-    margin-top:5%;
+    position: absolute;
+    margin-top:15%;
   }
 
   h1 {
@@ -49,11 +51,12 @@
   .contact-grid{
     width:50%;
     margin-left: 40%;
+    margin-top:15%;
+    will-change: contents;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
   }
-
-  .grid_container{  
-    background-color: black;
-  }
-
 
 }
