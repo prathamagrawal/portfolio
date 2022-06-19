@@ -1,18 +1,55 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import home from "../../assets/images/home_c.jpg"
-
-import './index.scss'
+import home from '../../assets/images/home_c.jpg'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['  ', 'P', 'r', 'a', 't', 'h', 'a', 'm', '  ', 'A', 'g', 'r', 'a', 'w', 'a', 'l']
-  const jobArray = ['F', 'u', 't', 'u', 'r', 'e', '  ', 'D', 'a', 't', 'a', ' ', 'S', 'c', 'i', 'e', 'n', 't', 'i', 's', 't']
+  const nameArray = [
+    '  ',
+    'P',
+    'r',
+    'a',
+    't',
+    'h',
+    'a',
+    'm',
+    '  ',
+    'A',
+    'g',
+    'r',
+    'a',
+    'w',
+    'a',
+    'l',
+  ]
+  const jobArray = [
+    'F',
+    'u',
+    't',
+    'u',
+    'r',
+    'e',
+    '  ',
+    'D',
+    'a',
+    't',
+    'a',
+    ' ',
+    'S',
+    'c',
+    'i',
+    'e',
+    'n',
+    't',
+    'i',
+    's',
+    't',
+  ]
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
   }, [])
@@ -40,8 +77,11 @@ const Home = () => {
                 idx={1}
               />
             </h1>
-            <h2>Future Data Scientist | Machine Learning Engineer |<br/> Chaiperson at IET-VIT |  Student </h2>
-            <Link to="/contact" className="flat-button">
+            <h2>
+              Future Data Scientist | Machine Learning Engineer |<br />{' '}
+              Chaiperson at IET-VIT | Student{' '}
+            </h2>
+            <Link href="/contact" className="flat-button">
               CONTACT ME
             </Link>
           </div>
