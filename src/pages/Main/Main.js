@@ -20,7 +20,6 @@ function Main() {
             <Projects />
             <Blog />
             <Contacts />
-            <Footer />
         </div>
     )
 }
