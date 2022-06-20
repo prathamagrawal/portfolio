@@ -4,20 +4,11 @@
     height: 80%;
     padding:10px 10px 10px 10px;
 
-    p {
+    .skills_heading {
         font-size: 54px;
         text-align: center;
         font-family: "Elianto";
-
-        .text-animate {
-            color: black;
-        }
-
-        .text-animate-hover {
-            &:hover{
-                color:#783f8e;    
-            }
-        }
+        color:#783f8e;
     }
 
     .tech{

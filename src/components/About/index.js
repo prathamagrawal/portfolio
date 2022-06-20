@@ -78,10 +78,8 @@ const About = () => {
           <Link href="Resume.pdf">
             <a className={`${styleslayout["flat-button"]}`}>RESUME</a>
           </Link>
-
         </div>
       </div>
-      <Loader type="pacman" />
     </>
   )
 }

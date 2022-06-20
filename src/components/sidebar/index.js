@@ -5,15 +5,30 @@ import {
   faKaggle,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope,faBars } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 import LogoS from '../../assets/images/outlinedP.png'
 import LogoP from '../../assets/images/Pratham.png'
 import styleslayout from './index.module.scss'
 import Image from 'next/image'
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 const Sidebar = () => {
   return (
+  <div>
+    <div className={`${styleslayout["bars"]}`}>
+      <a href="javascript:void(0);" onclick="myFunction()" className={`${styleslayout["class"]}`}>
+      <FontAwesomeIcon icon={faBars} color="white" size="3x"/>
+      </a>
+    </div>
     <div className={`${styleslayout["nav-bar"]}`}>
       <div className={`${styleslayout["nav-bar1"]}`}>
       <Link className={`${styleslayout["logo"]}`} href="/">
@@ -89,6 +104,7 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
+    </div>
     </div>
   )
 }

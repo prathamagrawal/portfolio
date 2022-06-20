@@ -31,13 +31,8 @@ const Card = () => {
   return (
     <>
       <div className={`${styleslayout["card_h"]}`}>
-        <p>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={['S', 'K', 'I', 'L', 'L', 'S']}
-            idx={15}
-          />
-        </p>
+        <h1 className={`${styleslayout["skills_heading"]}`}> SKILLS
+        </h1>
         <Container>
           <Grid
             container
