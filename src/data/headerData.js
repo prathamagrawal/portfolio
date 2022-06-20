@@ -4,7 +4,7 @@ import photo from '../assets/png/photo.jpg'
 export const headerData = {
     name: 'Pratham Agrawal',
     title: "Future Data Scientist",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
+    desciption:"“If you're really ready to sail, then the sea, the wind and the ship will be ready too! You must be ready first for the universe to help you!”",
     image: photo,
     resumePdf: resume
 }
