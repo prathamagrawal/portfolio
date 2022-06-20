@@ -1,6 +1,3 @@
-import Component from '../components/Home/index'
-import Layout from '../components/layout/index'
-
-export default function Home() {
-  return <Layout child={<Component />} />
-}
+export { default as Main } from './Main/Main'
+export { default as BlogPage } from './Blog/BlogPage'
+export { default as ProjectPage } from './Project/ProjectPage'
