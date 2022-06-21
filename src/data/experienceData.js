@@ -9,7 +9,7 @@ export const experienceData = [
     {
         id: 2,
         company: 'Institution of Engineering and Technology, VIT',
-        jobtitle: 'Chaiperson',
+        jobtitle: 'Chairperson',
         startYear: '2022',
         endYear: 'Present'
     },
