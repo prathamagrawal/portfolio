@@ -23,7 +23,7 @@ export const experienceData = [
     {
         id: 3,
         company: 'Klatach Technologies',
-        jobtitle: 'Data Science/ Annotation Intern',
+        jobtitle: 'Web Research Intern in AI Data Team',
         startYear: '2022',
         endYear: 'Present'
     },
