@@ -1,7 +1,7 @@
  export const skillsData = [   
     'React', 
     'Next JS',   
-    'Node JS',   
+    'NodeJS',   
     'Docker',    
     'Markdown',  
     'C', 
