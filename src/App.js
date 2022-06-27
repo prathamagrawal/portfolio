@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-
+import { socialsData } from './data/socialsData'
 import { ThemeContext } from './contexts/ThemeContext';
 import { Main, BlogPage, ProjectPage } from './pages'
 import { BackToTop } from './components'
@@ -24,7 +24,19 @@ function App() {
           <Route path="/" exact component={Main} />
           <Route path="/blog" exact component={BlogPage} />
           <Route path="/projects" exact component={ProjectPage} />
-      
+
+          
+          <Route path='/github' component={() => { window.location.href = socialsData.github; return null;}}/>
+          <Route path='/linkedin' component={() => { window.location.href = socialsData.linkedin; return null;}}/>
+          <Route path='/instagram' component={() => { window.location.href = socialsData.instagram; return null;}}/>
+          <Route path='/twitter' component={() => { window.location.href = socialsData.twitter; return null;}}/>
+          <Route path='/medium' component={() => { window.location.href = socialsData.medium; return null;}}/>
+          <Route path='/phone' component={() => { window.location.href = socialsData.phone; return null;}}/>
+          <Route path='/kaggle' component={() => { window.location.href = socialsData.kaggle; return null;}}/>
+          <Route path='/mail' component={() => { window.location.href = socialsData.mail; return null;}}/>
+
+
+
           <Redirect to="/" />
         </Switch>
       </Router>
