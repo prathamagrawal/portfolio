@@ -5,6 +5,6 @@ export const socialsData = {
     twitter: 'https://twitter.com/fearsomejockey',
     medium: 'https://medium.com/@prathammanishagrawal',
     kaggle: 'https://kaggle.com/fearsomjockey',
-    mail: 'https://mailto:prathamagrawal1205@gmail.com',
+    mail: 'mailto:prathamagrawal1205@gmail.com',
     phone: 'tel:+918269067007',
 }
