@@ -25,9 +25,9 @@ function App() {
           <Route path="/blog" exact component={BlogPage} />
           <Route path="/projects" exact component={ProjectPage} />
 
-          
+
           <Route path='/github' component={() => { window.location.href = socialsData.github; return null;}}/>
-          <Route path='/linkedin' component={() => { window.location.href = socialsData.linkedin; return null;}}/>
+          <Route path='/linkedin' component={() => { window.location.href = socialsData.linkedIn; return null;}}/>
           <Route path='/instagram' component={() => { window.location.href = socialsData.instagram; return null;}}/>
           <Route path='/twitter' component={() => { window.location.href = socialsData.twitter; return null;}}/>
           <Route path='/medium' component={() => { window.location.href = socialsData.medium; return null;}}/>
