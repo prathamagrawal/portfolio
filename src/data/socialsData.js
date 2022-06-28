@@ -4,7 +4,7 @@ export const socialsData = {
     instagram: 'https://www.instagram.com/prathammanishagrawal',
     twitter: 'https://twitter.com/fearsomejockey',
     medium: 'https://medium.com/@prathammanishagrawal',
-    kaggle: 'https://kaggle.com/fearsomjockey',
+    kaggle: 'https://kaggle.com/fearsomejockey',
     mail: 'mailto:prathamagrawal1205@gmail.com',
     phone: 'tel:+918269067007',
 }
