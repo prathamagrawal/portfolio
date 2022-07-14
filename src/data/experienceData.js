@@ -20,11 +20,4 @@ export const experienceData = [
         startYear: '2022',
         endYear: 'Present'
     },
-    {
-        id: 3,
-        company: 'Klatach Technologies',
-        jobtitle: 'Web Research Intern in AI Data Team',
-        startYear: '2022',
-        endYear: 'Present'
-    },
 ]
