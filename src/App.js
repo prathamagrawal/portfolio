@@ -35,7 +35,7 @@ function App() {
           <Route path='/phone' component={() => { window.location.href = socialsData.phone; return null;}}/>
           <Route path='/kaggle' component={() => { window.location.href = socialsData.kaggle; return null;}}/>
           <Route path='/mail' component={() => { window.location.href = socialsData.mail; return null;}}/>
-
+          <Route path='/meet' component={() => { window.location.href = "https://meet.google.com/hva-ofdd-fdy"; return null;}}/>
 
 
           <Redirect to="/" />
