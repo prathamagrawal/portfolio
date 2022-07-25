@@ -5,6 +5,8 @@ export const socialsData = {
     twitter: 'https://twitter.com/fearsomejockey',
     medium: 'https://medium.com/@prathammanishagrawal',
     kaggle: 'https://kaggle.com/fearsomejockey',
+    codechef: 'https://www.codechef.com/users/prathamagrawal',
+    leetcode: 'https://leetcode.com/prathamagrawal/',
     mail: 'mailto:prathamagrawal1205@gmail.com',
     phone: 'tel:+918269067007',
 }
