@@ -1,9 +1,9 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'Little Love',
-        jobtitle: 'Human Resources Director',
-        startYear: '2018',
+        company: 'Hacklabs Solutions Private Limited',
+        jobtitle: 'Artificial Intelligence (AI/ML) Intern',
+        startYear: 'August, 2022',
         endYear: 'Present'
     },
     {
@@ -15,9 +15,9 @@ export const experienceData = [
     },
     {
         id: 3,
-        company: 'Vellore Insitute of Technology',
-        jobtitle: 'Research',
-        startYear: '2022',
-        endYear: 'Present'
+        company: 'Little Love',
+        jobtitle: 'Human Resources Director',
+        startYear: '2018',
+        endYear: '2022'
     },
 ]
