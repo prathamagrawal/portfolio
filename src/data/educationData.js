@@ -12,12 +12,5 @@ export const educationData = [
         course: 'Bachelor of Technology',
         startYear: '2020',
         endYear: '2024'
-    },
-    {
-        id: 3,
-        institution: 'Coming soon..',
-        course: 'Coming soon..',
-        startYear: '',
-        endYear: ''
-    },
+    }
 ]
