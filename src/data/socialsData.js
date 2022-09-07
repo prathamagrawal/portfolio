@@ -9,4 +9,5 @@ export const socialsData = {
     leetcode: 'https://leetcode.com/prathamagrawal/',
     mail: 'mailto:prathamagrawal1205@gmail.com',
     phone: 'tel:+918269067007',
+    pypi: 'https://pypi.org/user/fearsomejockey/'
 }

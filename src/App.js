@@ -38,8 +38,7 @@ function App() {
           <Route path='/meet' component={() => { window.location.href = "https://meet.google.com/hva-ofdd-fdy"; return null;}}/>
           <Route path='/codechef' component={() => { window.location.href = socialsData.codechef; return null;}}/>
           <Route path='/leetcode' component={() => { window.location.href = socialsData.leetcode; return null;}}/>
-
-
+          <Route path='/pypi' component={() => { window.location.href = socialsData.pypi; return null;}}/>
 
           <Redirect to="/" />
         </Switch>
