@@ -7,6 +7,7 @@ import { BackToTop } from './components'
 import ScrollToTop from './utils/ScrollToTop'
 import resume from './assets/pdf/Resume.pdf'
 import aihealthcare from './assets/pdf/paper1.pdf'
+import googlcloud from './assets/pdf/GoogleCloudCert.pdf'
 import ml_cvd from './assets/pdf/ML_CVD_IEEE.pdf'
 import './App.css'
 
@@ -15,7 +16,7 @@ function App() {
 
   const { theme } = useContext(ThemeContext);
 
-  console.log("%cDEVELOPER PORTFOLIO", `color:${theme.primary}; font-size:50px`);
+  console.log("%cPratham Agrawal", `color:${theme.primary}; font-size:50px`);
   console.log("%chttps://github.com/hhhrrrttt222111/developer-portfolio", `color:${theme.tertiary}; font-size:20px`);
   // console.log = console.warn = console.error = () => {};
 
@@ -42,7 +43,7 @@ function App() {
           <Route path='/codechef' component={() => { window.location.href = socialsData.codechef; return null;}}/>
           <Route path='/leetcode' component={() => { window.location.href = socialsData.leetcode; return null;}}/>
           <Route path='/pypi' component={() => { window.location.href = socialsData.pypi; return null;}}/>
-
+          <Route path='/gcp' component={() => { window.location.href = googlcloud; return null;}}/>
           <Redirect to="/" />
         </Switch>
       </Router>
