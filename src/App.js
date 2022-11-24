@@ -9,6 +9,7 @@ import resume from './assets/pdf/Resume.pdf'
 import aihealthcare from './assets/pdf/paper1.pdf'
 import googlcloud from './assets/pdf/GoogleCloudCert.pdf'
 import ml_cvd from './assets/pdf/ML_CVD_IEEE.pdf'
+import hacklab_cert from './assets/pdf/Hacklab_cert.pdf'
 import './App.css'
 
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/journal' component={() => { window.location.href = aihealthcare; return null;}}/>
           <Route path='/mlpaper' component={() => { window.location.href = ml_cvd; return null;}}/>
           <Route path='/resume' component={() => { window.location.href = resume; return null;}}/>
+          <Route path='/hacklab' component={() => { window.location.href = hacklab_cert; return null;}}/>
           <Route path='/github' component={() => { window.location.href = socialsData.github; return null;}}/>
           <Route path='/linkedin' component={() => { window.location.href = socialsData.linkedIn; return null;}}/>
           <Route path='/instagram' component={() => { window.location.href = socialsData.instagram; return null;}}/>
